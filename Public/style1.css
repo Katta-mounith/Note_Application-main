@@ -1,0 +1,47 @@
+h1{
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    background-color: transparent;
+    margin: auto;
+}
+
+body{
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url(./Images/stadium.jpeg);
+}
+.nav{
+
+  text-align: right;
+  
+}
+
+form{
+  margin-left:35%;
+  margin-right: 35%;
+  margin-bottom: 30%;
+  background-color: gainsboro;
+  border-style: solid;
+  border-width: 0.5mm;
+  border-radius: 1mm;
+}
+  a{
+    align-items: right;
+    display: block;
+    color: black;
+    float: right;
+    text-decoration: none;
+  }
+  
+.image1{
+    border-radius: 50%;
+    border: solid;
+  }
+  .flex{
+    display: flex;
+  }
+ .photo img{
+  border: solid;
+ }
