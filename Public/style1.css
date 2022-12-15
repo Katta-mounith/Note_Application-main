@@ -10,7 +10,7 @@ body{
     
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
-    background-image: url(./Images/stadium.jpeg);
+   
 }
 .nav{
 
@@ -38,9 +38,6 @@ form{
 .image1{
     border-radius: 50%;
     border: solid;
-  }
-  .flex{
-    display: flex;
   }
  .photo img{
   border: solid;
