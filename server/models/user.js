@@ -33,10 +33,9 @@ async function register(user) {
   return await login(user);
 }
 // Read User -- login user
-async function login(user) { // {userName: "sda", password: "gsdhjsga"}
-  let cUser = await getUser(user); //[{userName: "cathy123", password: "icecream"}]
-  
-  if(!cUser[0]) throw Error("Username not found");
+async function login(user) { 
+  let cUser = await getUser(user);
+  if(!cUser[0]) throw Error("User not found");
   if(cUser[0].password !== user.password) throw Error("Password incorrect");
 
   return cUser[0];
@@ -77,7 +76,7 @@ async function getUser(user) {
       WHERE Email = "${user.email}"
   `;
   }
-  console.log("user::::::::::::::::::",user,"::::::::::::sql:::::::::",sql)
+ 
   return await con.query(sql);  
 }
 module.exports = { getAllUsers, login, register, editUser, deleteUser};
