@@ -3,11 +3,13 @@ h1{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: 300;
     background-color: transparent;
+    color: yellow;
     margin: auto;
 }
 
 body{
-    
+    background-image: url(./image/wall.jpg);
+    background-size:cover;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
    
@@ -19,26 +21,41 @@ body{
 }
 
 form{
-  margin-left:35%;
-  margin-right: 35%;
-  margin-bottom: 30%;
-  background-color: gainsboro;
-  border-style: solid;
-  border-width: 0.5mm;
-  border-radius: 1mm;
+  position: absolute;
+  top:50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%,-50%);
+  font-size: x-large;
+  color: yellow;
+  background: transparent;
+  box-shadow: 0 15px 25px pink (104, 98, 134, 0.7);
+  border-radius: 10px;
 }
   a{
     align-items: right;
     display: block;
-    color: black;
+    color: blue;
+    font-size: medium;
     float: right;
     text-decoration: none;
   }
-  
-.image1{
-    border-radius: 50%;
-    border: solid;
+  #logout-btn {
+    cursor: pointer;
   }
- .photo img{
-  border: solid;
- }
+
+  #Reg-btn{
+    font-size:14px;
+    text-decoration:none;
+    font-size: medium;
+    color:gold;
+    margin: auto;
+    width: 60%;
+    text-align:center;
+}
+#Reg-btn a{
+  margin:auto;
+  color:blue;
+  text-decoration:none;
+}
