@@ -65,11 +65,11 @@ async function fetchData(route = '', data = {}, methodType) {
     let Email=document.getElementById("email").value;
     let password = document.getElementById("psw").value;
     let user = new User(userFname, userLname,Email, password);
-    console.log(user)
+   // console.log(user)
     fetchData("/users/register", user, "POST")
     .then((data) => {
       setCurrentUser(data);
-      alert("registration success")
+      alert("Successfull registered")
       window.location.href = "page.html";
     })
     .catch((err) =>{
@@ -107,12 +107,12 @@ function notePageFunction(e){
 if(user&&note) getallnotes();
 
 function getallnotes(){
-  let notedata =document.getElementById('note');
+  let note1 =document.getElementById('note');
   fetchData("/notes/getNote",user,"POST")
   .then((data)=>{
     console.log(data);
     for(let i=0;i<data.length;i++){
-      notedata.value+=data[i].noteContent;
+      note1.value = data[i].noteContent;
     }
   })
 }
